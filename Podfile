@@ -1,26 +1,13 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'RSSReader' do
+target 'RSS-READER' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for RSSReader
-
-	# add the Firebase pod for Google Analytics
-	pod 'Firebase/Analytics'
-	pod 'Firebase/Auth'
-	pod 'Firebase'
-	# add pods for any other desired Firebase products
-	# https://firebase.google.com/docs/ios/setup#available-pods
-
-  target 'RSSReaderTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'RSSReaderUITests' do
-    # Pods for testing
-  end
+  # Pods for RSS-READER
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
 
 end
