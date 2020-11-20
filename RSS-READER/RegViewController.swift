@@ -17,9 +17,11 @@ class RegViewController: UIViewController {
     
     @IBOutlet weak var passField: UITextField!
     
-    @IBAction func clickedButton(_ sender: Any) {
-        let email = emailField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let password = passField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+    @IBOutlet weak var regButton: UIButton!
+    
+    @IBAction func c(_ sender: UIButton) {
+        let email = emailField.text ?? ""
+        let password = passField.text ?? ""
         
         Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
             

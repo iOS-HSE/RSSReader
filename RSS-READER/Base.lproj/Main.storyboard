@@ -75,7 +75,7 @@
         <!--Title-->
         <scene sceneID="ped-NQ-aaR">
             <objects>
-                <viewController id="4a8-rf-Upe" customClass="RegViewController" sceneMemberID="viewController">
+                <viewController id="4a8-rf-Upe" customClass="RegViewController" customModule="RSS_READER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O2r-BN-qwP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,6 +103,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="c:" destination="4a8-rf-Upe" eventType="touchUpInside" id="r21-va-avt"/>
                                     <action selector="clickedButton:" destination="4a8-rf-Upe" eventType="touchUpInside" id="cpc-Me-Pei"/>
                                 </connections>
                             </button>
@@ -123,6 +124,7 @@
                         <outlet property="emailField" destination="yW4-js-7fe" id="i2o-qj-gUy"/>
                         <outlet property="kk" destination="rAY-9D-AwC" id="yhx-8Z-QZl"/>
                         <outlet property="passField" destination="zWT-aL-zv1" id="wCB-kg-yAu"/>
+                        <outlet property="regButton" destination="rAY-9D-AwC" id="HE0-rd-mxX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2EJ-WE-rag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
