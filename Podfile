@@ -6,21 +6,9 @@ target 'RSSReader' do
   use_frameworks!
 
   # Pods for RSSReader
-
-	# add the Firebase pod for Google Analytics
-	pod 'Firebase/Analytics'
-	pod 'Firebase/Auth'
-	pod 'Firebase'
-	# add pods for any other desired Firebase products
-	# https://firebase.google.com/docs/ios/setup#available-pods
-
-  target 'RSSReaderTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'RSSReaderUITests' do
-    # Pods for testing
-  end
+pod 'Firebase/Analytics'
+pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
+pod 'Firebase/Database'
 
 end
