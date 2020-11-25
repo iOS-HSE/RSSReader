@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l83-Bh-WU4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l83-Bh-WU4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -103,7 +103,6 @@
                                         </state>
                                         <connections>
                                             <action selector="loginButtonPressed:" destination="B3T-DG-7ep" eventType="touchUpInside" id="zu7-Ym-Dx4"/>
-                                            <segue destination="avF-zc-We4" kind="show" id="BPY-hs-Vi3"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABd-X8-Hw6">
@@ -134,6 +133,7 @@
                         <outlet property="errorLabel" destination="ABd-X8-Hw6" id="pLM-yb-ttf"/>
                         <outlet property="loginButton" destination="6bh-IM-ZGR" id="YZ1-Mk-mG5"/>
                         <outlet property="passwordTextField" destination="4wt-Mb-X7x" id="IKB-hI-aYa"/>
+                        <segue destination="avF-zc-We4" kind="show" id="HQy-le-pJc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfB-Gk-aeI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -177,7 +177,6 @@
                                         </state>
                                         <connections>
                                             <action selector="signInButtonPressed:" destination="qfw-qc-OH5" eventType="touchUpInside" id="dNg-j2-3La"/>
-                                            <segue destination="avF-zc-We4" kind="show" id="IpQ-QS-YQv"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndi-MR-bMK">
@@ -237,8 +236,8 @@
         <!--Page View Controller-->
         <scene sceneID="4PZ-uo-owN">
             <objects>
-                <viewController id="avF-zc-We4" customClass="PageViewController" customModule="RSSReader" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Success" id="aAn-iR-gUx">
+                <viewController storyboardIdentifier="PageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="avF-zc-We4" customClass="PageViewController" customModule="RSSReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aAn-iR-gUx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -268,9 +267,6 @@
             <point key="canvasLocation" x="4516" y="132"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="IpQ-QS-YQv"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="RSSPreview" width="1562" height="1561"/>
     </resources>

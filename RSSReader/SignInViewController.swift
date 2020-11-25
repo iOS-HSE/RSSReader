@@ -62,6 +62,11 @@ class SignInViewController: UIViewController {
                             self.errorLabel.textColor = .red
                             self.errorLabel.text = "Saving user error"
                         }
+                        else {
+                            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                            let secondVC = storyboard.instantiateViewController(identifier: "PageViewController") as! PageViewController
+                            self.navigationController?.pushViewController(secondVC, animated: true)
+                        }
                     }
                 }
             }
