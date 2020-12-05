@@ -1,0 +1,15 @@
+//
+//  Constants.swift
+//  RSSReader
+//
+//  Created by Ignatovskiy Nikita on 05/12/2020.
+//  Copyright © 2020 Ignatovskiy Nikita. All rights reserved.
+//
+
+import Foundation
+
+struct Constants
+{
+    static let api_news_getting = "http://192.168.0.159:4444/api/news"
+}
+
