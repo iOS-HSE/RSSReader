@@ -103,26 +103,58 @@
 			isa = PBXGroup;
 			children = (
 				66B389C2257AFFE900B21B4E /* ArticleTableViewCell.swift */,
+				66B389D2257B108400B21B4E /* Storyboards */,
 				66B389CA257B000700B21B4E /* Constants.swift */,
-				66B389CC257B001000B21B4E /* Article.swift */,
-				66B389C8257AFFFE00B21B4E /* URL+Extensions.swift */,
-				66B389C4257AFFF300B21B4E /* ArticlesTableViewController.swift */,
-				66B389CE257B001800B21B4E /* Parsing.swift */,
-				66B389D0257B001F00B21B4E /* ArticlesModel.swift */,
+				66B389D3257B10A500B21B4E /* View Controllers */,
+				66B389D5257B111000B21B4E /* Models */,
+				66B389D4257B10E400B21B4E /* Utils */,
 				0AC7E86125685830005E3DAC /* AppDelegate.swift */,
 				0AC7E86325685830005E3DAC /* SceneDelegate.swift */,
-				0AC7E86525685830005E3DAC /* ViewController.swift */,
-				0AC7E86725685830005E3DAC /* Main.storyboard */,
 				0AC7E86A25685835005E3DAC /* Assets.xcassets */,
-				0AC7E86C25685835005E3DAC /* LaunchScreen.storyboard */,
 				0AC7E86F25685835005E3DAC /* Info.plist */,
 				0AC7E87525685D7A005E3DAC /* GoogleService-Info.plist */,
+			);
+			path = RSSReader;
+			sourceTree = "<group>";
+		};
+		66B389D2257B108400B21B4E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0AC7E86725685830005E3DAC /* Main.storyboard */,
+				0AC7E86C25685835005E3DAC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		66B389D3257B10A500B21B4E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AC7E86525685830005E3DAC /* ViewController.swift */,
 				0AC7E87725686269005E3DAC /* AuthViewController.swift */,
 				0AC7E8792568628B005E3DAC /* SignInViewController.swift */,
 				0AC7E87B256862A4005E3DAC /* LoginViewController.swift */,
 				0AC7E87D256862C1005E3DAC /* PageViewController.swift */,
+				66B389C4257AFFF300B21B4E /* ArticlesTableViewController.swift */,
 			);
-			path = RSSReader;
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		66B389D4257B10E400B21B4E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				66B389C8257AFFFE00B21B4E /* URL+Extensions.swift */,
+				66B389CE257B001800B21B4E /* Parsing.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		66B389D5257B111000B21B4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				66B389CC257B001000B21B4E /* Article.swift */,
+				66B389D0257B001F00B21B4E /* ArticlesModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		931EACC2DC11F999F0E4FE5A /* Frameworks */ = {
