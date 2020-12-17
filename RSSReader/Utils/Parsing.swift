@@ -51,8 +51,7 @@ class Parsing
             }
             else if let data = data
             {
-                print(data)
-                let articlesList = (try! JSONDecoder().decode(ArticleText.self, from: data))
+                let articlesList = (try? JSONDecoder().decode(ArticleText.self, from: data))
                 completion(articlesList)
 
             }

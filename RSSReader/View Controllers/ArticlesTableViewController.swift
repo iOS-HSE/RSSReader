@@ -77,7 +77,7 @@ class ArticlesTableViewController: UITableViewController
         let vc = storyboard.instantiateViewController(withIdentifier: "test") as! ArticleViewController
         Parsing(url: " ").getArticle(with: URL.api_page_url(hash: textArticle))
         { articles in
-            vc.textArt = (articles?.title)! + "\n\n" + (articles?.text)!
+            vc.textArt = articles?.text ?? "Не удалось спарсить статью с сайта - вылез баннер. Попробуйте загрузить новость еще раз."
             DispatchQueue.main.async
             {
             self.navigationController?.pushViewController(vc,animated: true)
