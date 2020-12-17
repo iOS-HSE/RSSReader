@@ -61,7 +61,7 @@ extension ArticleViewModel
     }
     var hash: String
     {
-        return self.article.link
+        return self.article.hash
     }
 }
 

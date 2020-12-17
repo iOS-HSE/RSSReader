@@ -39,4 +39,26 @@ class Parsing
         
     }
     
+    func getArticle(with url: URL, completion: @escaping (ArticleText?) -> ())
+    {
+        
+        URLSession.shared.dataTask(with: url)
+        { data, response, error in
+            if let error = error
+            {
+                print(error.localizedDescription)
+                completion(nil)
+            }
+            else if let data = data
+            {
+                print(data)
+                let articlesList = (try! JSONDecoder().decode(ArticleText.self, from: data))
+                completion(articlesList)
+
+            }
+            
+        }.resume()
+        
+    }
+    
 }

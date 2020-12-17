@@ -15,21 +15,25 @@ class ArticlesTableViewController: UITableViewController
 {
     
     private var articlesForTable: ArticlesModel!
-    private var textArticle: ArticleTextModel!
+    private var textArticle: String!
 
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         self.tableView.isScrollEnabled = true
+        self.refreshControl?.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
         fillingTableGaps()
+    }
+    
+    @objc func refresh(sender:AnyObject)
+    {
+        fillingTableGaps()
+        self.refreshControl?.endRefreshing()
     }
     
     private func fillingTableGaps()
     {
-        
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        
         Parsing(url: " ").getArticles(with: URL.api_news_url())
         { articles in
             if let articles = articles
@@ -65,4 +69,20 @@ class ArticlesTableViewController: UITableViewController
         tableCell.fill(for: articleInCell)
         return tableCell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        textArticle = self.articlesForTable.articleAtIndex(indexPath.row).hash
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "test") as! ArticleViewController
+        Parsing(url: " ").getArticle(with: URL.api_page_url(hash: textArticle))
+        { articles in
+            vc.textArt = (articles?.title)! + "\n\n" + (articles?.text)!
+            DispatchQueue.main.async
+            {
+            self.navigationController?.pushViewController(vc,animated: true)
+            }}
+        }
+    
 }
+
