@@ -15,4 +15,9 @@ extension URL
     {
         return URL(string: Constants.api_news_getting)!
     }
+    
+    static func api_page_url(hash: String) -> URL
+    {
+        return URL(string: String(Constants.api_page_getting + hash))!
+    }
 }

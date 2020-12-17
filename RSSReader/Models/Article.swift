@@ -18,12 +18,13 @@ struct Article: Codable
     let title: String
     let media: String
     let published: String
-    let link: String
+    let hash: String
 }
 
 struct ArticleText: Codable
 {
     let text: String
+    let title: String
 }
 
 
