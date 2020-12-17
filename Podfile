@@ -6,11 +6,10 @@ target 'RSSReader' do
   use_frameworks!
 
   # Pods for RSSReader
-pod 'Firebase/Auth', '7.2-M1'
-pod 'Firebase/Core', '7.2-M1'
-pod 'Firebase/Analytics', '7.2-M1'
-pod 'Firebase/Auth', '7.2-M1'
-pod 'Firebase/Firestore', '7.2-M1'
-pod 'Firebase/Database', '7.2-M1'
+pod 'Firebase/Auth'
+pod 'Firebase/Core'
+pod 'Firebase/Analytics'
+pod 'Firebase/Firestore'
+pod 'Firebase/Database'
 
 end
