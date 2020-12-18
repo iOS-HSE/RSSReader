@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l83-Bh-WU4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l83-Bh-WU4">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
+<<<<<<< HEAD
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+=======
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+>>>>>>> 4e67221deb5d68f4e79e0abb7d14980ae4c7607d
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -341,7 +345,6 @@
         <!--Tab Controller-->
         <scene sceneID="79m-Td-IjU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yTD-Sn-qIE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="tabc" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EQ4-aH-VOP" customClass="TabController" customModule="RSSReader" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s8d-Bq-XXq">
@@ -352,9 +355,9 @@
                     <connections>
                         <segue destination="18I-w8-cHZ" kind="relationship" relationship="viewControllers" id="cng-ti-xtW"/>
                         <segue destination="78g-3r-XdR" kind="relationship" relationship="viewControllers" id="dhW-8U-dm0"/>
-                        <segue destination="p8j-r7-gks" kind="relationship" relationship="viewControllers" id="ne0-xN-69P"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yTD-Sn-qIE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5844" y="409"/>
         </scene>
@@ -380,7 +383,6 @@
         <!--Sources-->
         <scene sceneID="6zI-Zp-4K7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ymW-jh-D94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="sources" useStoryboardIdentifierAsRestorationIdentifier="YES" id="78g-3r-XdR" customClass="SourcesController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="66C-9Q-4cA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -396,10 +398,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Sources" image="checkmark.circle.fill" catalog="system" id="iU0-Bj-hhA" userLabel="Sources"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymW-jh-D94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5336" y="1195"/>
         </scene>
-        <!--Item-->
+        <!--Settings View Controller-->
         <scene sceneID="aMy-9v-ccx">
             <objects>
                 <tableViewController id="p8j-r7-gks" customClass="SettingsViewController" customModule="RSSReader" customModuleProvider="target" sceneMemberID="viewController">
@@ -411,7 +414,7 @@
                         <sections>
                             <tableViewSection id="GrX-nS-Khd">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="43.5" id="230-QB-x8c">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="230-QB-x8c">
                                         <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="230-QB-x8c" id="smH-9J-qgj">
@@ -444,7 +447,7 @@
                                             <subviews>
                                                 <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KMw-JT-LYq">
                                                     <rect key="frame" x="186" y="7" width="118" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <action selector="fonsSizeSliderValueChanged:" destination="p8j-r7-gks" eventType="valueChanged" id="bze-4o-ZVr"/>
                                                     </connections>
@@ -457,8 +460,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Шрифт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elm-VM-xvn">
-                                                    <rect key="frame" x="16" y="13" width="164" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <rect key="frame" x="16" y="13" width="47" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -482,7 +485,7 @@
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uX-S2-W4a">
                                                     <rect key="frame" x="93" y="6" width="134" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Выйти из аккаунта"/>
                                                     <connections>
                                                         <action selector="signOutButtonPressed:" destination="p8j-r7-gks" eventType="touchUpInside" id="gth-LV-Jqy"/>
@@ -500,7 +503,6 @@
                             <outlet property="delegate" destination="p8j-r7-gks" id="VGg-Wn-l2m"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="wjo-tH-K98"/>
                     <connections>
                         <outlet property="fontSizeLable" destination="Elm-VM-xvn" id="mso-2T-Sql"/>
                         <outlet property="fontSizeSlider" destination="KMw-JT-LYq" id="JlG-MD-QeB"/>
@@ -508,17 +510,21 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rOk-Rr-aGE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4340.625" y="1245.4225352112676"/>
+            <point key="canvasLocation" x="4798" y="880"/>
         </scene>
     </scenes>
+<<<<<<< HEAD
     <inferredMetricsTieBreakers>
         <segue reference="5MZ-Kw-nPs"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
         <namedColor name="background.white.dark">
             <color red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+=======
+    <resources>
+        <image name="checkmark.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
+>>>>>>> 4e67221deb5d68f4e79e0abb7d14980ae4c7607d
     </resources>
 </document>
