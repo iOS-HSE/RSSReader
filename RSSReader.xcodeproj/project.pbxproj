@@ -28,6 +28,7 @@
 		66B389CF257B001800B21B4E /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B389CE257B001800B21B4E /* Parsing.swift */; };
 		66B389D1257B001F00B21B4E /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B389D0257B001F00B21B4E /* ArticlesModel.swift */; };
 		76E1034B3A6FFBB9C473490F /* Pods_RSSReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90B745BD6F04F1BFFD828A9 /* Pods_RSSReader.framework */; };
+		EB8BAF5A258D401000865543 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8BAF59258D401000865543 /* TabController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +69,7 @@
 		66B389D0257B001F00B21B4E /* ArticlesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesModel.swift; sourceTree = "<group>"; };
 		6E8118812AB30BC229E352DA /* Pods-RSSReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSReader.release.xcconfig"; path = "Target Support Files/Pods-RSSReader/Pods-RSSReader.release.xcconfig"; sourceTree = "<group>"; };
 		E90B745BD6F04F1BFFD828A9 /* Pods_RSSReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSSReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8BAF59258D401000865543 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		EF6FA2DFAB7656FDB840857D /* Pods-RSSReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSReader.debug.xcconfig"; path = "Target Support Files/Pods-RSSReader/Pods-RSSReader.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 				0AC7E87D256862C1005E3DAC /* PageViewController.swift */,
 				66B389C4257AFFF300B21B4E /* ArticlesTableViewController.swift */,
 				664429D0258BACD800938C36 /* ArticleViewController.swift */,
+				EB8BAF59258D401000865543 /* TabController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				0AC7E87825686269005E3DAC /* AuthViewController.swift in Sources */,
 				66B389C6257AFFF300B21B4E /* ArticlesTableViewController.swift in Sources */,
 				664429D1258BACD800938C36 /* ArticleViewController.swift in Sources */,
+				EB8BAF5A258D401000865543 /* TabController.swift in Sources */,
 				0AC7E86625685830005E3DAC /* ViewController.swift in Sources */,
 				66B389D1257B001F00B21B4E /* ArticlesModel.swift in Sources */,
 				66B389C3257AFFE900B21B4E /* ArticleTableViewCell.swift in Sources */,
