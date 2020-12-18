@@ -142,8 +142,11 @@
 				0AC7E87D256862C1005E3DAC /* PageViewController.swift */,
 				66B389C4257AFFF300B21B4E /* ArticlesTableViewController.swift */,
 				664429D0258BACD800938C36 /* ArticleViewController.swift */,
+<<<<<<< HEAD
 				0A6E4F57258D4AF500CA4487 /* SettingsViewController.swift */,
+=======
 				EB8BAF59258D401000865543 /* TabController.swift */,
+>>>>>>> 4e67221deb5d68f4e79e0abb7d14980ae4c7607d
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";

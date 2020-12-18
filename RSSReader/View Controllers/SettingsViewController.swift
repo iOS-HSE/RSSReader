@@ -26,7 +26,9 @@ class SettingsViewController: UITableViewController {
         super.viewDidLoad()
         fontSizeSlider.minimumValue = 12
         fontSizeSlider.maximumValue = 24
-        
+        fontSizeSlider.value = Float(fontSize)
+        fontSizeLable.font = fontSizeLable.font.withSize(CGFloat(fontSize))
+
         fontSizeLable.text = "Шрифт: \(fontSize)"
         // Do any additional setup after loading the view.
     }
@@ -34,6 +36,7 @@ class SettingsViewController: UITableViewController {
     @IBAction func fonsSizeSliderValueChanged(_ sender: UISlider) {
         fontSize = Int(sender.value)
         fontSizeLable.text = "Шрифт: \(fontSize)"
+        fontSizeLable.font = fontSizeLable.font.withSize(CGFloat(fontSize))
     }
     
     @IBAction func themeSwitchTriggered(_ sender: UISwitch) {

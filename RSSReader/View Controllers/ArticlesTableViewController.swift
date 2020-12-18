@@ -28,6 +28,10 @@ class ArticlesTableViewController: UITableViewController
         fillingTableGaps()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
     @objc func refresh(sender:AnyObject)
     {
         fillingTableGaps()
