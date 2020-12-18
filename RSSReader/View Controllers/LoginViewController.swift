@@ -54,10 +54,11 @@ class LoginViewController: UIViewController {
                    }
                    else {
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let secondVC = storyboard.instantiateViewController(identifier: "ArticlesTableViewController") as! ArticlesTableViewController
+                    let secondVC = storyboard.instantiateViewController(identifier: "tabc") as! TabController
 //                    secondVC.modalPresentationStyle = .overCurrentContext
-                    let newNavVC = UINavigationController(rootViewController: secondVC)
-                    self.view.window?.rootViewController = newNavVC
+//                    let newNavVC = UINavigationController(rootViewController: secondVC)
+                    self.view.window?.rootViewController = secondVC
+                    
 //                    self.navigationController?.isNavigationBarHidden = true
 //                    self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
 //                    self.navigationController?.pushViewController(secondVC, animated: true)
