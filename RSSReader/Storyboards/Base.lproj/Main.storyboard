@@ -343,6 +343,7 @@
                 <tabBarController storyboardIdentifier="tabc" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EQ4-aH-VOP" customClass="TabController" customModule="RSSReader" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s8d-Bq-XXq">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -355,11 +356,11 @@
             </objects>
             <point key="canvasLocation" x="5844" y="409"/>
         </scene>
-        <!--Item-->
+        <!--Main-->
         <scene sceneID="1hf-fh-jlt">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="18I-w8-cHZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="vya-7v-W8m"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="18I-w8-cHZ" userLabel="Main" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Main" image="house.fill" catalog="system" id="vya-7v-W8m" userLabel="Main"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ksg-cb-oxu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -374,7 +375,7 @@
             </objects>
             <point key="canvasLocation" x="6431.25" y="1194.7183098591549"/>
         </scene>
-        <!--Item-->
+        <!--Sources-->
         <scene sceneID="6zI-Zp-4K7">
             <objects>
                 <viewController storyboardIdentifier="sources" useStoryboardIdentifierAsRestorationIdentifier="YES" id="78g-3r-XdR" customClass="SourcesController" sceneMemberID="viewController">
@@ -390,11 +391,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ieM-XG-NU9"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="iU0-Bj-hhA"/>
+                    <tabBarItem key="tabBarItem" title="Sources" image="checkmark.circle.fill" catalog="system" id="iU0-Bj-hhA" userLabel="Sources"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ymW-jh-D94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5336" y="1195"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="checkmark.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
+    </resources>
 </document>
