@@ -377,7 +377,7 @@
         <!--Item-->
         <scene sceneID="6zI-Zp-4K7">
             <objects>
-                <viewController storyboardIdentifier="settings" useStoryboardIdentifierAsRestorationIdentifier="YES" id="78g-3r-XdR" customClass="SettingsController" customModule="RSSReader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sources" useStoryboardIdentifierAsRestorationIdentifier="YES" id="78g-3r-XdR" customClass="SourcesController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="66C-9Q-4cA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
