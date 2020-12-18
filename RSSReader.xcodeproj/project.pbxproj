@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A6E4F58258D4AF500CA4487 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E4F57258D4AF500CA4487 /* SettingsViewController.swift */; };
 		0AC7E86225685830005E3DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7E86125685830005E3DAC /* AppDelegate.swift */; };
 		0AC7E86425685830005E3DAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7E86325685830005E3DAC /* SceneDelegate.swift */; };
 		0AC7E86625685830005E3DAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7E86525685830005E3DAC /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A6E4F57258D4AF500CA4487 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		0AC7E85E25685830005E3DAC /* RSSReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC7E86125685830005E3DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AC7E86325685830005E3DAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				0AC7E87D256862C1005E3DAC /* PageViewController.swift */,
 				66B389C4257AFFF300B21B4E /* ArticlesTableViewController.swift */,
 				664429D0258BACD800938C36 /* ArticleViewController.swift */,
+				0A6E4F57258D4AF500CA4487 /* SettingsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				0AC7E87E256862C1005E3DAC /* PageViewController.swift in Sources */,
 				0AC7E87825686269005E3DAC /* AuthViewController.swift in Sources */,
 				66B389C6257AFFF300B21B4E /* ArticlesTableViewController.swift in Sources */,
+				0A6E4F58258D4AF500CA4487 /* SettingsViewController.swift in Sources */,
 				664429D1258BACD800938C36 /* ArticleViewController.swift in Sources */,
 				0AC7E86625685830005E3DAC /* ViewController.swift in Sources */,
 				66B389D1257B001F00B21B4E /* ArticlesModel.swift in Sources */,
