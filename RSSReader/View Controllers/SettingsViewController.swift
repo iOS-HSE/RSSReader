@@ -19,6 +19,7 @@ class SettingsViewController: UITableViewController {
         }
     }
 
+    @IBOutlet weak var themeLabel: UILabel!
     @IBOutlet weak var fontSizeSlider: UISlider!
     @IBOutlet weak var fontSizeLable: UILabel!
     
@@ -28,7 +29,7 @@ class SettingsViewController: UITableViewController {
         fontSizeSlider.maximumValue = 24
         fontSizeSlider.value = Float(fontSize)
         fontSizeLable.font = fontSizeLable.font.withSize(CGFloat(fontSize))
-
+        themeLabel.font = themeLabel.font.withSize(CGFloat(fontSize))
         fontSizeLable.text = "Шрифт: \(fontSize)"
         // Do any additional setup after loading the view.
     }
@@ -37,13 +38,16 @@ class SettingsViewController: UITableViewController {
         fontSize = Int(sender.value)
         fontSizeLable.text = "Шрифт: \(fontSize)"
         fontSizeLable.font = fontSizeLable.font.withSize(CGFloat(fontSize))
+        themeLabel.font = themeLabel.font.withSize(CGFloat(fontSize))
     }
     
     @IBAction func themeSwitchTriggered(_ sender: UISwitch) {
         
     }
     @IBAction func signOutButtonPressed(_ sender: UIButton) {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let secondVC = storyboard.instantiateViewController(identifier: "AuthViewController") as! AuthViewController
+        self.view.window?.rootViewController = secondVC
     }
     
 
