@@ -9,7 +9,6 @@ target 'RSSReader' do
 pod 'Firebase/Auth', '7.2-M1'
 pod 'Firebase/Core', '7.2-M1'
 pod 'Firebase/Analytics', '7.2-M1'
-pod 'Firebase/Auth', '7.2-M1'
 pod 'Firebase/Firestore', '7.2-M1'
 pod 'Firebase/Database', '7.2-M1'
 

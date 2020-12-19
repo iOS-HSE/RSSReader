@@ -18,6 +18,9 @@ class ArticleViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        var fontSize = CGFloat(UserDefaults.standard.integer(forKey: "fontSize"))
+        fontSize = fontSize != 0 ? fontSize : textArticle.font?.pointSize ?? 0
+        textArticle.font = textArticle.font?.withSize(fontSize)
         textArticle.text = textArt
     }
     

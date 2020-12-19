@@ -17,6 +17,9 @@ class ArticleTableViewCell: UITableViewCell
     
     func fill(for article: ArticleViewModel)
     {
+        var fontSize = CGFloat(UserDefaults.standard.integer(forKey: "fontSize"))
+        fontSize = fontSize != 0 ? fontSize : titleLabel.font.pointSize
+        titleLabel.font = titleLabel.font.withSize(fontSize)
         self.titleLabel.text = article.title
         self.descriptionLabel.text = article.description 
     }

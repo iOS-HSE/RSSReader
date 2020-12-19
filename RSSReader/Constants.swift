@@ -10,7 +10,7 @@ import Foundation
 
 struct Constants
 {
-    static let api_news_getting = "http://192.168.0.159:4440/api/news"
-    static let api_page_getting = "http://192.168.0.159:4440/api/page/"
+    static let api_news_getting = "http://109.184.65.226:4440/api/news"
+    static let api_page_getting = "http://109.184.65.226:4440/api/page/"
 }
 

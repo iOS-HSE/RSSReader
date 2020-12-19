@@ -54,8 +54,8 @@ class LoginViewController: UIViewController {
                    }
                    else {
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let secondVC = storyboard.instantiateViewController(identifier: "ArticlesTableViewController") as! ArticlesTableViewController
-                    self.navigationController?.pushViewController(secondVC, animated: true)
+                    let secondVC = storyboard.instantiateViewController(identifier: "tabc") as! TabController
+                    self.view.window?.rootViewController = secondVC
                 }
                }
            }
