@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SettingsViewController: UITableViewController {
     
@@ -48,6 +49,12 @@ class SettingsViewController: UITableViewController {
         (view.window?.windowScene?.delegate as? SceneDelegate)?.changeTheme(to: theme)
     }
     @IBAction func signOutButtonPressed(_ sender: UIButton) {
+        let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+          print ("Error signing out: %@", signOutError)
+        }
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let secondVC = storyboard.instantiateViewController(identifier: "AuthViewController") as! AuthViewController
         self.view.window?.rootViewController = secondVC
