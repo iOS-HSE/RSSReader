@@ -24,7 +24,10 @@ class ArticlesTableViewController: UITableViewController
         self.tableView.isScrollEnabled = true
         self.refreshControl?.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
 //        self.navigationController?.navigationBar.tintColor = .white
-        self.navigationController?.navigationBar.backgroundColor = .white
+//        self.navigationController?.navigationBar.backgroundColor = .red
+        self.navigationController?.navigationBar.isTranslucent = false
+        
+//        self.navigationController?.navigationBar.isOpaque = false
         fillingTableGaps()
     }
     
