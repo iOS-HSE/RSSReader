@@ -18,7 +18,6 @@
 		0AC7E87825686269005E3DAC /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7E87725686269005E3DAC /* AuthViewController.swift */; };
 		0AC7E87A2568628B005E3DAC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7E8792568628B005E3DAC /* SignInViewController.swift */; };
 		0AC7E87C256862A4005E3DAC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7E87B256862A4005E3DAC /* LoginViewController.swift */; };
-		0AC7E87E256862C1005E3DAC /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC7E87D256862C1005E3DAC /* PageViewController.swift */; };
 		664429D1258BACD800938C36 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664429D0258BACD800938C36 /* ArticleViewController.swift */; };
 		66B38959257AF18000B21B4E /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		66B389C3257AFFE900B21B4E /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B389C2257AFFE900B21B4E /* ArticleTableViewCell.swift */; };
@@ -60,7 +59,6 @@
 		0AC7E87725686269005E3DAC /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		0AC7E8792568628B005E3DAC /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		0AC7E87B256862A4005E3DAC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		0AC7E87D256862C1005E3DAC /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		664429D0258BACD800938C36 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		66B389C2257AFFE900B21B4E /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		66B389C4257AFFF300B21B4E /* ArticlesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewController.swift; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 				0AC7E87725686269005E3DAC /* AuthViewController.swift */,
 				0AC7E8792568628B005E3DAC /* SignInViewController.swift */,
 				0AC7E87B256862A4005E3DAC /* LoginViewController.swift */,
-				0AC7E87D256862C1005E3DAC /* PageViewController.swift */,
 				66B389C4257AFFF300B21B4E /* ArticlesTableViewController.swift */,
 				664429D0258BACD800938C36 /* ArticleViewController.swift */,
 				0A6E4F57258D4AF500CA4487 /* SettingsViewController.swift */,
@@ -304,7 +301,6 @@
 				66B389CD257B001000B21B4E /* Article.swift in Sources */,
 				66B389C9257AFFFE00B21B4E /* URL+Extensions.swift in Sources */,
 				0AC7E87C256862A4005E3DAC /* LoginViewController.swift in Sources */,
-				0AC7E87E256862C1005E3DAC /* PageViewController.swift in Sources */,
 				0AC7E87825686269005E3DAC /* AuthViewController.swift in Sources */,
 				66B389C6257AFFF300B21B4E /* ArticlesTableViewController.swift in Sources */,
 				0A6E4F58258D4AF500CA4487 /* SettingsViewController.swift in Sources */,

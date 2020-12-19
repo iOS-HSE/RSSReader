@@ -624,6 +624,7 @@
                         <outlet property="fontSizeLable" destination="Elm-VM-xvn" id="mso-2T-Sql"/>
                         <outlet property="fontSizeSlider" destination="KMw-JT-LYq" id="JlG-MD-QeB"/>
                         <outlet property="themeLabel" destination="DJE-Dk-lFF" id="YZL-7Q-aYl"/>
+                        <outlet property="themeSwitch" destination="Qxr-ZG-rIN" id="HGO-8g-L5A"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rOk-Rr-aGE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

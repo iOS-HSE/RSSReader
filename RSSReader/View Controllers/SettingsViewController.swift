@@ -23,6 +23,7 @@ class SettingsViewController: UITableViewController {
     @IBOutlet weak var themeLabel: UILabel!
     @IBOutlet weak var fontSizeSlider: UISlider!
     @IBOutlet weak var fontSizeLable: UILabel!
+    @IBOutlet weak var themeSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,7 @@ class SettingsViewController: UITableViewController {
         fontSizeSlider.value = Float(fontSize)
         fontSizeLable.font = fontSizeLable.font.withSize(CGFloat(fontSize))
         themeLabel.font = themeLabel.font.withSize(CGFloat(fontSize))
+        themeSwitch.isOn = UserDefaults.standard.bool(forKey: "isLightTheme")
         fontSizeLable.text = "Шрифт: \(fontSize)"
         // Do any additional setup after loading the view.
     }
@@ -48,6 +50,7 @@ class SettingsViewController: UITableViewController {
         let theme: UIUserInterfaceStyle = isLightTheme ? .light : .dark
         (view.window?.windowScene?.delegate as? SceneDelegate)?.changeTheme(to: theme)
     }
+    
     @IBAction func signOutButtonPressed(_ sender: UIButton) {
         let firebaseAuth = Auth.auth()
         do {
