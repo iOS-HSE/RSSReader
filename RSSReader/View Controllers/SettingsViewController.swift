@@ -42,7 +42,10 @@ class SettingsViewController: UITableViewController {
     }
     
     @IBAction func themeSwitchTriggered(_ sender: UISwitch) {
-        
+        let isLightTheme = sender.isOn
+        UserDefaults.standard.set(isLightTheme, forKey: "isLightTheme")
+        let theme: UIUserInterfaceStyle = isLightTheme ? .light : .dark
+        (view.window?.windowScene?.delegate as? SceneDelegate)?.changeTheme(to: theme)
     }
     @IBAction func signOutButtonPressed(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
