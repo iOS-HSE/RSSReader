@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l83-Bh-WU4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l83-Bh-WU4">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -49,17 +49,17 @@
                                     <constraint firstItem="QXW-nz-UoL" firstAttribute="height" secondItem="irG-U9-3ec" secondAttribute="height" id="zt3-OD-7va"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RSSPreview" translatesAutoresizingMaskIntoConstraints="NO" id="Qph-yb-ZWC">
-                                <rect key="frame" x="30" y="201" width="260" height="168"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RSSPreview" translatesAutoresizingMaskIntoConstraints="NO" id="ODe-I7-xrI">
+                                <rect key="frame" x="30" y="100" width="260" height="305"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Qph-yb-ZWC" firstAttribute="leading" secondItem="1St-QY-Xwv" secondAttribute="leading" constant="30" id="3lD-am-byM"/>
+                            <constraint firstItem="ODe-I7-xrI" firstAttribute="top" secondItem="wI3-V8-sW1" secondAttribute="top" constant="100" id="3YD-uV-pJT"/>
                             <constraint firstItem="RlC-7j-PN5" firstAttribute="leading" secondItem="1St-QY-Xwv" secondAttribute="leading" constant="30" id="3vq-KD-uFw"/>
-                            <constraint firstItem="1St-QY-Xwv" firstAttribute="trailing" secondItem="Qph-yb-ZWC" secondAttribute="trailing" constant="30" id="6JY-bA-74l"/>
-                            <constraint firstItem="Qph-yb-ZWC" firstAttribute="top" secondItem="1St-QY-Xwv" secondAttribute="top" constant="157" id="WMa-BW-h47"/>
-                            <constraint firstItem="RlC-7j-PN5" firstAttribute="top" secondItem="Qph-yb-ZWC" secondAttribute="bottom" constant="44" id="cFg-zY-MkB"/>
+                            <constraint firstItem="RlC-7j-PN5" firstAttribute="top" secondItem="ODe-I7-xrI" secondAttribute="bottom" constant="8" id="RUg-1H-rZw"/>
+                            <constraint firstItem="ODe-I7-xrI" firstAttribute="leading" secondItem="1St-QY-Xwv" secondAttribute="leading" constant="30" id="eLr-Kt-QSR"/>
+                            <constraint firstItem="1St-QY-Xwv" firstAttribute="trailing" secondItem="ODe-I7-xrI" secondAttribute="trailing" constant="30" id="esD-Ym-BHa"/>
                             <constraint firstItem="1St-QY-Xwv" firstAttribute="trailing" secondItem="RlC-7j-PN5" secondAttribute="trailing" constant="30" id="p3k-16-KRr"/>
                             <constraint firstItem="1St-QY-Xwv" firstAttribute="bottom" secondItem="RlC-7j-PN5" secondAttribute="bottom" constant="50" id="vmb-aY-9cj"/>
                         </constraints>
@@ -632,7 +632,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="RSSPreview" width="1562" height="1561"/>
+        <image name="RSSPreview" width="500" height="500"/>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
